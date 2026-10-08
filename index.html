@@ -38,6 +38,14 @@
 .explain .process-picker{padding-bottom:9px;margin-bottom:10px;border-bottom:1px dashed #839762}.process-picker>strong{font-size:12px}.explain .process-list{margin-top:6px;gap:6px}.explain .process-list button{font-size:11px;padding:5px 8px}.explain .process-list button:first-child{flex-basis:auto}.current-explanation{min-height:0}.explain h2{line-height:1.5}
 .quiz-item{padding:9px 0;border-bottom:1px dashed #c4a878}.quiz-item:last-child{border:0;padding-bottom:0}.quiz-item p{margin:0 0 7px;font-size:12px;line-height:1.6}.quiz-item .answers button{font-size:12px;padding:5px 8px;min-height:32px}.quiz-item .answers button[aria-pressed=true]{outline:2px solid #486841;outline-offset:1px}.quiz-head small{font-size:10px}
 @media(max-width:600px){.brand{padding:5px 9px}.brand>b{font-size:13px}.node .sprite{width:27px;height:27px}.node small{margin-top:2px;font-size:10px;line-height:1.2}.node.fossil{padding-top:3px!important}.node.fossil .coal{margin-bottom:1px;font-size:16px}.node.fossil small{font-size:10px;line-height:1.2}.explain .process-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}.explain .process-list button{font-size:11px;line-height:1.35;padding:4px 2px;min-height:30px}.explain .process-list button:first-child{font-size:10px}.explain .process-picker{padding-bottom:6px;margin-bottom:7px}.explain{padding:7px 8px}.side{margin-top:8px}.quiz-item p{font-size:12px}.quiz-item .answers button{min-height:34px}}
+
+/* Reserve label clearance independently of sprite size and font metrics. */
+.node:not(.air){display:grid;grid-template-rows:minmax(0,1fr) auto auto;gap:2px;padding:6px 5px 14px!important}
+.node:not(.air) .sprite{align-self:center;justify-self:center;min-height:0;max-height:54px;height:100%;width:auto;max-width:54px;aspect-ratio:1;margin:0!important}
+.node:not(.air) strong{margin:0;line-height:1.2}
+.node:not(.air) small{margin:0;line-height:1.3}
+.node.fossil .coal{align-self:center;margin:0;font-size:22px;line-height:1}
+@media(max-width:600px){.node:not(.air){padding:3px 4px 10px!important;gap:2px}.node:not(.air) .sprite{max-height:24px;max-width:24px}.node.fossil .coal{font-size:15px}.node:not(.air) small{line-height:1.2}}
 </style></head><body>
 <header><div class="brand"><b>一生儿 · 《高中生物一本通》</b><span>选择性必修 2 · 生物与环境</span></div></header>
 <main><div class="heading"><div><h1>生态系统的<em>物质循环</em></h1><p>以碳循环为例，追踪碳在生物群落与非生物环境之间的往返。</p></div><div class="chapter">交互模型 04</div></div>
