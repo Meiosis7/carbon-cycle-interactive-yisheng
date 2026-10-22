@@ -47,8 +47,11 @@
 .node.fossil .coal{align-self:center;margin:0;font-size:22px;line-height:1}
 @media(max-width:600px){.node:not(.air){padding:3px 4px 10px!important;gap:2px}.node:not(.air) .sprite{max-height:24px;max-width:24px}.node.fossil .coal{font-size:15px}.node:not(.air) small{line-height:1.2}}
 .label-backdrop{cursor:pointer}.scene svg .edge-label{stroke:none;font-size:12px}
+
+/* Unified book header: keep the complete text visible on phones. */
+header .brand{min-width:0;max-width:100%;white-space:normal;overflow-wrap:anywhere;line-height:1.5;flex-wrap:wrap}header .brand b{min-width:0;max-width:100%;white-space:normal;overflow-wrap:anywhere;line-height:1.5}header .topbar{justify-content:flex-start}
 </style></head><body>
-<header><div class="brand"><b>一生儿 · 《高中生物一本通》</b><span>选择性必修 2 · 生物与环境</span></div></header>
+<header><div class="brand"><b>一生儿《高中生物一本通》· 选择性必修 2</b></div></header>
 <main><div class="heading"><div><h1>生态系统的<em>物质循环</em></h1><p>以碳循环为例，追踪碳在生物群落与非生物环境之间的往返。</p></div><div class="chapter">交互模型 04</div></div>
 <div class="layout"><section class="board"><div class="toolbar"><strong>碳的循环之旅</strong><div class="modes"><button id="stepMode" aria-pressed="true">分步推演</button><button id="allMode" aria-pressed="false">完整循环</button></div></div>
 <div class="scene paused" id="scene" role="img" aria-label="碳循环示意图，绿色为进入群落及摄食途径，橙色为返回大气途径，紫色为分解与长期储存途径。可以用下方过程按钮选择箭头。"><svg id="network" aria-hidden="true"></svg>
